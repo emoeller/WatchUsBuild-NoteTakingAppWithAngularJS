@@ -1,5 +1,5 @@
-angular.module('NoteWrangler').controller('NotesIndexController', function(NoteFactory, $scope){
-  $scope.notes = NoteFactory.query();
-
-  //console.log($scope.notes);
+angular.module('NoteWrangler').controller('NotesIndexController', function(Note, $scope){
+  $scope.notes = Note.query();
+  $scope.search = {};
+  window.sc = $scope;
 });

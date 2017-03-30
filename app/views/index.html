@@ -14,11 +14,8 @@
             <a href="/#/">NoteWranger</a>
           </div>
         </div>
+        <nw-page-nav></nw-page-nav>
       </div>
-      <ul class="nav navbar-nav">
-        <li><a href="#/notes">Notes</a></li>
-        <li><a href="#/users">Users</a></li>
-      </ul>
     </nav>
     <div ng-view class="container-fluid"></div>
   </body>
@@ -28,12 +25,18 @@
   <script src="assets/javascript/vendor/angular.js"></script>
   <script src="assets/javascript/vendor/angular-resource.js"></script>
   <script src="assets/javascript/vendor/angular-route.js"></script>
+  <script src="assets/javascript/vendor/bootstrap.js"></script>
+  <script src="assets/javascript/vendor/md5.js"></script>
+  <script src="assets/javascript/vendor/ngGravatar.js"></script>
 
   <!-- App -->
   <script src="assets/javascript/app.js"></script>
   <script src="assets/javascript/routes.js"></script>
 
   <!-- Directives -->
+  <script src="assets/javascript/directives/nwPageNav.js"></script>
+  <script src="assets/javascript/directives/nwCategorySelector.js"></script>
+  <script src="assets/javascript/directives/title.js"></script>
 
   <!-- Controllers -->
   <script src="assets/javascript/controllers/notesIndexController.js"></script>
@@ -43,7 +46,11 @@
   <script src="assets/javascript/controllers/usersIndexController.js"></script>
   <script src="assets/javascript/controllers/usersShowController.js"></script>
 
+  <!-- Filters -->
+  <script src="assets/javascript/filters/categoryFilter.js"></script>
+
   <!-- Services -->
   <script src="assets/javascript/services/note.js"></script>
   <script src="assets/javascript/services/user.js"></script>
+  <script src="assets/javascript/services/category.js"></script>
 </html>

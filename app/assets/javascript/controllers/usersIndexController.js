@@ -1,3 +1,3 @@
-angular.module('NoteWrangler').controller('UsersIndexController', function(UserFactory, $scope){
-  $scope.users = UserFactory.query();
+angular.module('NoteWrangler').controller('UsersIndexController', function(User, $scope){
+  $scope.users = User.query();
 });

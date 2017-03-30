@@ -1,3 +1,3 @@
-angular.module('NoteWrangler').controller('UsersShowController', function(UserFactory, $scope, $routeParams){
-  $scope.user = UserFactory.get({id: $routeParams.id});
+angular.module('NoteWrangler').controller('UsersShowController', function(User, $scope, $routeParams){
+  $scope.user = User.get({id: $routeParams.id});
 });
